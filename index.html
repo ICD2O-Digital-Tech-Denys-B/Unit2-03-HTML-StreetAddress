@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css"></href>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!--MDL-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>Rectangle Central</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script src="js/script.js"></script>
+    <h1>Calculate perimeter or area of a rectangle</h1>
+    <h3>Perimeter calculator in cm</h3>
+    <!--Input boxes-->
+    <p>Length</p>
+    <input type="number" id="length-peri" value="">
+    <p>Width</p>
+    <input type="number" id="width-peri" value="">
+    <!--Paragraph containing the answer-->
+    <p id="answer-peri"></p>
+    <!-- Raised button that activates a function -->
+    <button onclick="calcPerimeter()" class="mdl-button mdl-js-button mdl-button--raised">
+    Calculate
+    </button>
+    <h3>Area calculator in cm</h3>
+    <p>Length</p>
+    <input type="number" id="length-area" value="">
+    <p>Width</p>
+    <input type="number" id="width-area" value="">
+    <!--Paragraph containing the answer-->
+    <p id="answer-area"></p>
+        <!-- Raised button that activates a function -->
+    <button onclick="calcArea()" class="mdl-button mdl-js-button mdl-button--raised">
+    Calculate
+    </button>
   </body>
 </html>
